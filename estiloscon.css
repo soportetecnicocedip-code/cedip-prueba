@@ -426,7 +426,9 @@ body{
 	}
 	
 	.container-form .btn-enviar{
-	padding: 28px;
+	margin-top: 20px;
+	margin-left: 20px;	
+    padding: 28px;
 	font-size: 28px;
 }
 	.container-form iframe{
