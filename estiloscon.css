@@ -334,6 +334,11 @@ body{
 
 
 @media screen and (max-width:1080px)and (orientation: portrait){
+.logo h1{
+	font-size: 32px;
+}
+	
+
 	.pie-pagina .grupo-1{
 		width: 90%;
 		grid-template-columns: repeat(1, 1fr);
@@ -386,7 +391,7 @@ body{
 	/*-----------Ajustes de Contacto--------------*/
 	
 	#content{
-		height: 1350px;
+		height: 1300px;
 	}
 	
 	.cont-form{
@@ -398,7 +403,7 @@ body{
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 30px;
 	}
-.container-form form .campo, textarea{
+.container-form form .campo{
 	width: 90%;
 	font-size: 35px;
 }
