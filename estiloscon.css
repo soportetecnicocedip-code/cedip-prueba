@@ -386,7 +386,7 @@ body{
 	/*-----------Ajustes de Contacto--------------*/
 	
 	#content{
-		height: 1000px;
+		height: 1350px;
 	}
 	
 	.cont-form{
@@ -400,24 +400,21 @@ body{
 	}
 .container-form form .campo, textarea{
 	width: 90%;
-	padding: 10px 10px;
 	font-size: 35px;
-	border: 1px solid #dbdbdb;
-	margin-bottom: 20px;
-	border-radius: 3px;
-	outline: 0px;
-	font-family: sans-serif;
 }
 
 	
 	.container-form form textarea{
-		max-width: 450px;
-		min-width: 450px;
+		max-width: auto;
+		min-width: auto;
+		max-height: 300px;
+     	min-height: 300px;
+		resize: none;
 	}
 	
 	.container-form iframe{
-		width: 400px;
-		height: 250px;
+		width: 600;
+		height: 450;
 	}
 }
 	
