@@ -399,7 +399,7 @@ body{
 	/*-----------Ajustes de Contacto--------------*/
 	
 	#content{
-		height: 1250px;
+		height: 1300px;
 	}
 	
 	.cont-form{
@@ -414,7 +414,7 @@ body{
 	
 .container-form form .campo, textarea{
 	width: 90%;
-	font-size: 35px;
+	font-size: 25px;
 	margin-bottom: 40px;
 }
 
