@@ -333,7 +333,7 @@ body{
 
 
 
-@media screen and (max-width:720px)and (orientation: portrait){
+@media screen and (max-width:1080px)and (orientation: portrait){
 	.pie-pagina .grupo-1{
 		width: 90%;
 		grid-template-columns: repeat(1, 1fr);
