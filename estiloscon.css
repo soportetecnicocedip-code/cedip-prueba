@@ -341,7 +341,12 @@ body{
 .container .menu{
   margin-top: 100px;
 }
-	
+
+.container .menu a{
+	padding: 25px;
+	font-size: 25px;
+	margin-right: 15px;
+}	
 	.pie-pagina .grupo-1{
 		width: 90%;
 		grid-template-columns: repeat(1, 1fr);
