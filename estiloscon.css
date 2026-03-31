@@ -338,7 +338,10 @@ body{
 	font-size: 32px;
 }
 	
-
+.container .menu{
+  margin-top: 100px;
+}
+	
 	.pie-pagina .grupo-1{
 		width: 90%;
 		grid-template-columns: repeat(1, 1fr);
@@ -403,7 +406,7 @@ body{
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 30px;
 	}
-.container-form form .campo{
+.container-form form .campo, textarea{
 	width: 90%;
 	font-size: 35px;
 }
