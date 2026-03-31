@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat Alternates",sans-serif;
+}
+
+body{
+	/*background-image: url("imagenes/fondo.jpg");*/
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.capa{
+	position: fixed;
+	width: 100%;
+	height:  100vh;
+	background: rgba(0,0,0,0.6);
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+/*Estilos para el encabezado*/
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;	
+	background-color: #0a141d;
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.container .btn-menu, .logo{
+	float: left;
+	line-height: 100px;
+}
+
+.container .btn-menu label{
+	color: #FFFFFF;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.logo h1{
+	color: #fff;
+	font-weight: 400;
+	font-size: 22px;
+	margin-left: 10px;
+}
+
+.container .menu{
+	float: right;
+	line-height: 100px;
+}
+
+.container .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+
+.container .menu a:hover {
+	border-bottom: 2px solid #c7c7c7;
+	padding-bottom: 5px;
+}
+
+/*Fin de estilo para encabezado*/
+
+/*Menu lateral*/
+#btn-menu{
+	display: none;
+}
+
+.container-menu{
+	position: fixed;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+
+.cont-menu{
+ width: 100%;
+ max-width: 250px;
+ background: #1c1c1c;
+ height: 100vh;
+ position: relative;
+ transition: all 500ms ease;
+ transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu  .cont-menu{
+	transform: translateX(0%);
+}
+
+.cont-menu nav{
+	transform: translateY(15%);
+}
+
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: #c7c7c7;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+	border-left: 5px solid #c7c7c7;
+	background: #1f1f1f;
+}
+
+.cont-menu label{
+	position: absolute;
+	right:  5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+/*fin del menu lateral---------------*/
+
+
+/*inicio de seccion --------------------*/
+#content{
+	margin: 0px;
+	margin-top: 0px;
+	background-color: #fff;
+	width: 100%;
+	height: 700px;
+}
+
+.cont-form{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 90px;
+}
+
+.cont-form img{
+	margin-top: 40px;
+}
+
+.cont-form h1{
+	margin-top: 20px;
+	font-size: 55px;
+	color: #414141;
+	text-shadow: 2px 2px 2px steelBlue;
+}
+
+.container-form{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	margin-top: 30px;
+}
+
+.container-form form .campo, textarea{
+	width: 100%;
+	padding: 10px 10px;
+	font-size: 15px;
+	border: 1px solid #dbdbdb;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	outline: 0px;
+	font-family: sans-serif;
+}
+
+.container-form form textarea{
+	max-width: 550px;
+	min-width: 550px;
+	max-height: 140px;
+	min-height: 140px;
+}
+
+.container-form .btn-enviar{
+	padding: 18px;
+	font-size: 18px;
+	border: none;
+	outline: 0px;
+	background: orange;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 300ms ease;
+	font-family: sans-serif;
+}
+
+.container-form .btn-enviar:hover{
+	background: #e40936;
+}
+
+
+/*fin de seccion --------------------*/
+
+
+/*Inicio del pie de pagina------------------*/
+
+.pie-pagina{
+	width: 100%;
+	background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 50px;
+	padding: 45px 0px;
+}
+
+
+.pie-pagina .grupo-1 .box figure{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+	width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+	color: #fff;
+	margin-bottom: 25px;
+	font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+	color: #efefef;
+	margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+	display: inline-block;
+	text-decoration: none;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	margin-right: 10px;
+	background-color: #0A1A2A3;
+	text-align: center;
+	transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+	color: aqua;
+}
+
+.pie-pagina .grupo-2{
+	background-color: #0A1A2A;
+	padding: 15px 10px;
+	text-align: center;
+	color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+	font-size: 15px;
+}
+
+/*fin de pie de pagina------------*/
+
+/*boton whatsapp*/
+
+.btn-wsp{
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	line-height: 50px;
+	bottom: 25px;
+	right: 15px;
+	background-color: #25d366;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 35px;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+	z-index: 100;
+	transition: all 300ms ease;
+}
+
+.btnwsp:hover{
+	background-color: #20ba5a;
+}
+/*fin  de boton whatsapp----------*/
+
+/*Inicio de seccion-------------------*/
+
+
+
+@media screen and (max-width:800px){
+	.pie-pagina .grupo-1{
+		width: 90%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 30px;
+		padding: 35px 0px;
+	}
+	
+/*propiedades de ajuste*/
+	.pie-pagina .grupo-1 .box figure img{
+		width: 200px;
+		height: 70px;
+	}
+	
+	.pie-pagina .grupo-1 .red-social a{
+		width: 30px;
+		height: 30px;
+	}
+	
+	
+	
+	.header{
+		height: 120px;
+	}
+	
+	.container .menu{
+		float: right;
+		line-height: 0px;
+	}
+	.container .menu a{
+		padding: 0px;
+		line-height: 0;
+	}
+	
+		
+	.btn-wsp{
+		width: 35px;
+		height: 35px;
+		line-height: 40px;
+	}
+	
+	a img{
+		width:30px;
+		height: 30px;
+	}
+	.section{
+		margin-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	/*-----------Ajustes de Contacto--------------*/
+	
+	#content{
+		height: 1000px;
+	}
+	
+	.cont-form{
+		width: 90%;
+	}
+	
+	.container-form{
+		width: 90%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 30px;
+	}
+	
+	.container-form form .campo textarea{
+		width: 90%;
+	}
+	
+	.container-form form textarea{
+		max-width: 450px;
+		min-width: 450px;
+	}
+	
+	.container-form iframe{
+		width: 400px;
+		height: 250px;
+	}
+}
+	
