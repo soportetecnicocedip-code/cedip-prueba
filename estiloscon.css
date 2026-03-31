@@ -422,8 +422,6 @@ body{
 	.container-form form textarea{
 		max-width: 900;
 		min-width: 900;
-		max-height: 300px;
-     	min-height: 300px;
 		resize: none;
 	}
 	
