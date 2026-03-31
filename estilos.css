@@ -558,16 +558,31 @@ body{
 		grid-gap: 10px;
 		padding: 0px 0px;
 	}
-	
+
+.article p{
+	font-size: 25px;
+}
+
 	.article h1{
-		font-size: 35px;
+		font-size: 55px;
 	}
 	
 	.article h2{
 		margin-top: 60px;
 		font-size: 15px;
 	}
+	.article .grupo3 h2{
+
+		font-size: 25px;
+	}
 	
+	.article .posts .post h2{
+		font-size: 25px;
+	}	
+	
+	.article .posts .post .fecha p{
+		font-size: 20px;
+	}
 	.slider, .slider ul, .slider img{
 		height: 30vh;
 }
